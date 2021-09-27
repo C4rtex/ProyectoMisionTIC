@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bafda3d1c7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <ul>
+                <li><img class="logo" src="imagenes/SportMaxLogo.png" alt=""></li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="enlaces">
+                    <a href="">¿Cómo Usar?</a>
+                </li>
+                <li class="activa">
+                    <a href="#quienes_somos">Sobre nosotros</a>
+                </li>
+                <li class="enlaces">
+                    <a href=""><i class="icono_perfil far fa-user-circle"></i></a>
+                </li>
+                <li class="enlaces">
+                    <a data-bs-toggle="modal" data-bs-target="#forminici">Iniciar sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container_qs" id="quienes_somos">
+        <div class="overlay">
+
+        </div>
+        <div class="presentacion">
+            <h2>¿QUIENES SOMOS?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <video class="video_qs" onloadedmetadata="this.muted=true" autoplay="" loop="" muted="">
+            <source src="imagenes/gym.mov">
+            <source src="imagenes/gym.mp4">
+            <source src="imagenes/gym.webm">
+        </video>
+    </section>
+    <!--MODALES-->
+    <div class="modal fade" id="forminici" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-bs-dismiss="modal" style="border: none; position: absolute; top: 0; right: 0;">
+                        <span>X</span>
+                    </button><br>
+                    <div class="container">
+                        <div class="mx-auto" style="width: 300px;">
+                            <h2 style="text-align: center;color:#FF9F1C;">Iniciar Sesión</h2>
+                        </div><br>
+                        <div class="mx-auto" style="width: 300px;">
+                            <p style="text-align: center;">¡Nos alegra verte de nuevo! ¿Estas preparado para una nuevo dia lleno de retos?</p>
+                        </div>
+                        <form action="">
+
+                            <div class="mx-auto" style="width: 300px;">
+                                <div class="dv-placeholder">
+                                    <label>
+                                    <span>Email</span>
+                                    <input class="inp-form" type="text" autocomplete="off">
+                                </label>
+                                </div>
+                            </div><br>
+                            <div class="mx-auto" style="width: 300px;">
+                                <div class="dv-placeholder">
+                                    <label>
+                                    <span>Contraseña</span>
+                                    <input class="inp-form"  type="password" autocomplete="off">
+                                </label>
+                                </div>
+                            </div><br>
+                            <div class="mx-auto" style="width: 300px;">
+                                <button type="button" class="btn_form" onclick="prueba();">Iniciar Sesion</button>
+                            </div>
+                        </form><br>
+                        <div class="mx-auto" style="width: 300px;">
+                            <p style="text-align: center;">¿Aún no eres parte de nuestra maravillosa comunidad? ¿Que esperas? ¡Unetenos!</p>
+                        </div>
+                        <div class="mx-auto" style="width: 300px;">
+                            <button type="button" class="btn_form" data-bs-toggle="modal" data-bs-target="#formregist">Registrarse</button>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="formregist" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-bs-dismiss="modal" style="border: none; position: absolute; top: 0; right: 0;">
+                        <span>X</span>
+                    </button><br>
+                    <div class="container">
+                        <div class="mx-auto" style="width: 300px;">
+                            <h2 style="text-align: center;color:#FF9F1C;">Registrate</h2>
+                        </div><br>
+                        <div class="mx-auto" style="width: 300px;">
+                            <p style="text-align: center;">¡Unete y descubre las ventajas que se tiene para tu salud y el potencial de utilizar herramientas digitales!</p>
+                        </div>
+                        <form action="">
+                            <div class="mx-auto" style="width: 300px;">
+                                <div class="dv-placeholder">
+                                    <label>
+                                    <span>Nombre</span>
+                                    <input class="inp-form"  type="text" autocomplete="off">
+                                </label>
+                                </div>
+                            </div><br>
+                            <div class="mx-auto" style="width: 300px;">
+                                <div class="dv-placeholder">
+                                    <label>
+                                    <span>Email</span>
+                                    <input class="inp-form"  type="text" autocomplete="off">
+                                </label>
+                                </div>
+                            </div><br>
+                            <div class="mx-auto" style="width: 300px;">
+                                <div class="dv-placeholder">
+                                    <label>
+                                    <span>Contraseña</span>
+                                    <input class="inp-form"  type="password" autocomplete="off">
+                                </label>
+                                </div>
+                            </div><br>
+                            <div class="mx-auto" style="width: 300px;">
+                                <button type="button" class="btn_form">Registrarse</button>
+                            </div>
+                        </form><br>
+                        <div class="mx-auto" style="width: 300px;">
+                            <button type="button" class="btn_form" data-bs-toggle="modal" data-bs-target="#forminici">Iniciar Sesion</button>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIN MODALES-->
+    <script src="javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>

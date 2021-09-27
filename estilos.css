@@ -1,0 +1,393 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    scroll-behavior: smooth;
+                }
+                
+                .nav_bar ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #FFBF69;
+                    overflow: hidden;
+                }
+                
+                .nav_bar li {
+                    float: left;
+                    padding: 15px 0;
+                }
+                
+                .nav_bar li:nth-child(5),
+                .nav_bar li:nth-child(6) {
+                    float: right;
+                }
+                
+                .nav_bar li:nth-child(2),
+                .nav_bar li:nth-child(3),
+                .nav_bar li:nth-child(4) {
+                    padding-right: 25px;
+                    padding-left: 25px;
+                }
+                
+                .nav_bar li:first-child {
+                    margin-left: 20px;
+                    margin-right: 60px;
+                    padding: 0;
+                }
+                
+                .nav_bar li a:first-child {
+                    cursor: pointer;
+                    color: #47525E;
+                }
+                
+                .activa {
+                    background-color: #FF9F1C;
+                }
+                
+                .enlaces:hover {
+                    background-color: #FF9F1C;
+                }
+                
+                .logo {
+                    width: 120px;
+                }
+                
+                .nav_bar li a {
+                    text-decoration: none;
+                    color: #47525E;
+                    display: block;
+                    text-align: center;
+                    font-weight: 900;
+                    font-size: 25px;
+                    font-family: 'Lato', sans-serif;
+                    padding: 14px 16px;
+                }
+                
+                .container_principal {
+                    display: flex;
+                    margin: 30px;
+                    position: relative;
+                    padding: 20px;
+                    border-radius: 30px;
+                    border: 20px solid rgba(255, 209, 133, 0.20);
+                    background-color: white;
+                }
+                
+                .container_imagen {
+                    position: relative;
+                    box-sizing: border-box;
+                    width: 50%;
+                    padding: 0 70px;
+                    background-color: white;
+                }
+                
+                .imagen_svg {
+                    width: 500px;
+                    position: absolute;
+                    bottom: -20%;
+                }
+                /*animaciones svg*/
+                
+                #bubble1 {
+                    animation-name: movimiento;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+                
+                #bubble2 {
+                    animation-name: movimiento;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+                
+                #bubble3 {
+                    animation-name: movimiento_naranjas;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+                
+                #bubble4 {
+                    animation-name: movimiento;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+                
+                #bubble5 {
+                    animation-name: movimiento;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+                
+                #bubble6 {
+                    animation-name: movimiento;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+                
+                #bubble7 {
+                    animation-name: movimiento_naranjas;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+                
+                #bubble8 {
+                    animation-name: movimiento8;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+                
+                @keyframes movimiento {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    25% {
+                        transform: translateY(20px);
+                    }
+                    50% {
+                        transform: translateY(0);
+                    }
+                    75% {
+                        transform: translateY(-15px);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+                
+                @keyframes movimiento_naranjas {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    25% {
+                        transform: translateY(-20px);
+                    }
+                    50% {
+                        transform: translateY(0);
+                    }
+                    75% {
+                        transform: translateY(15px);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+                
+                @keyframes movimiento8 {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    25% {
+                        transform: translateY(-15px);
+                    }
+                    50% {
+                        transform: translateY(0);
+                    }
+                    75% {
+                        transform: translateY(15px);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+                /*finalizacion animacion*/
+                
+                .icono_perfil {
+                    font-size: 30px;
+                }
+                
+                .container_inc {
+                    width: 50%;
+                    padding: 70px;
+                    z-index: 1;
+                }
+                
+                .titulo {
+                    font-family: 'Chewy', cursive;
+                    font-size: 70px;
+                    text-align: center;
+                    color: #47525E;
+                }
+                
+                .texto_inicio {
+                    font-family: 'Lato', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #47525E;
+                }
+                
+                .div_btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                button {
+                    font-family: 'Lato', sans-serif;
+                    margin-top: 5px;
+                    position: relative;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #47525E;
+                    padding: 5px 25px;
+                    cursor: pointer;
+                    background: none;
+                    border: 2px solid black;
+                    transition: color 0.4 linear;
+                }
+                
+                button::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #FF9F1C;
+                    z-index: -1;
+                    transition: transform 0.5s;
+                    transform-origin: 0 0;
+                    transition-timing-function: cubic-bezier(0, 5, 1, 6, 0.4, 0.7);
+                }
+                
+                .btn_iniciar::before {
+                    transform: scaleX(0);
+                }
+                
+                .btn_iniciar:hover::before {
+                    transform: scaleX(1);
+                }
+                
+                .modal-container {
+                    position: fixed;
+                    z-index: 1000;
+                    width: 100%;
+                    height: 100vh;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .btn_form.tits {
+                    color: #2EC4B6;
+                }
+                
+                .modal-register {
+                    width: 40%;
+                    height: 50%;
+                    background-color: white;
+                    text-align: center;
+                }
+                /*           Formulario       */
+                
+                input,
+                select,
+                textarea,
+                span {
+                    border: none;
+                    background: white;
+                    box-sizing: border-box;
+                    line-height: 12px;
+                    outline: none;
+                    padding: 0;
+                    resize: none;
+                    width: 275px;
+                }
+                
+                .dv-placeholder {
+                    margin-bottom: 10px;
+                }
+                
+                .dv-placeholder label {
+                    border: 2px solid silver;
+                    display: inline-block;
+                    padding: 10px;
+                    position: relative;
+                }
+                
+                .dv-placeholder span {
+                    color: silver;
+                    display: inline-block;
+                    left: 2px;
+                    padding: 5px;
+                    position: absolute;
+                    transition: 0.25s;
+                    top: 9px;
+                    width: auto;
+                }
+                
+                .dv-placeholder label.focus {
+                    border: 2px solid orange;
+                }
+                
+                .dv-placeholder span.reubicar {
+                    color: #FFBF69;
+                    font-size: 12px;
+                    top: -12px;
+                }
+                
+                .btn_form {
+                    width: 300px;
+                    background-color: #2EC4B6;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 15px;
+                }
+                /*QUIENES SOMOS*/
+                
+                .container_qs {
+                    border-radius: 20px;
+                    position: relative;
+                    margin: auto;
+                    margin-top: 60px;
+                    width: 95%;
+                    height: 100vh;
+                    overflow: hidden;
+                }
+                
+                .video_qs {
+                    border-radius: 30px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                .overlay {
+                    border-radius: 30px;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0.52);
+                }
+                
+                .presentacion {
+                    position: absolute;
+                }
+                
+                .presentacion h2 {
+                    text-align: center;
+                    color: white;
+                    font-family: 'Chewy', cursive;
+                    font-size: 70px;
+                    text-align: center;
+                }
+                
+                .presentacion p {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    font-size: 3.5vh;
+                }
+                /*FINAL QUIENES SOMOS*/

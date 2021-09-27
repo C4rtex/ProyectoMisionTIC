@@ -1,0 +1,27 @@
+ESPORT
+- catalogo de persoajes por caracterisicas
+- Los usuarios pueden calificar personajes
+- Elegir sus mains
+- Formulario de inscripcion de participantes para los ESPORTS
+
+----------------------- Primera idea -------------------------
+
+
+Venta deproductos artesanales
+- Dibujos digitales
+- formulario de envio
+- Formulario de "Unetenos a nuestro equipo"
+- Login y Register
+
+----------------------- Segunda idea -------------------------
+
+Ejercicios
+
+- Cronometro
+- Receso
+- Arma tu rutina
+- Contador de tiempo
+- Guarda tu rutina
+- Login, register
+
+----------------------- Tercera idea -------------------------
