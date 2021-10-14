@@ -81,6 +81,14 @@
                     background-color: white;
                 }
                 
+                .container_principal2 {
+                    margin: 30px;
+                    padding: 20px;
+                    border-radius: 30px;
+                    border: 20px solid rgba(255, 209, 133, 0.20);
+                    background-color: white;
+                }
+                
                 .container_imagen {
                     position: relative;
                     box-sizing: border-box;
@@ -399,6 +407,51 @@
                     font-size: 3.5vh;
                 }
                 /*FINAL QUIENES SOMOS*/
+                /*Como usar*/
+                
+                .listado {
+                    list-style: none;
+                }
+                
+                .fa-dumbbell {
+                    margin: 10px;
+                    font-size: 30px;
+                }
+                
+                .svg_comousar {
+                    width: 30%;
+                    height: 30%;
+                    padding-top: 20px;
+                    display: block;
+                    margin: auto;
+                }
+                /*FINAL COMO USAR*/
+                /*Perfil*/
+                
+                .nav_bar2 {
+                    padding: 15px;
+                }
+                
+                .nav_bar2 ul {
+                    list-style: none;
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                }
+                
+                .nav_bar2 li {
+                    padding: 15px 0;
+                    text-align: center;
+                    flex-grow: 1;
+                }
+                
+                .activanuevarut {
+                    background-color: darkslategrey;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+                /*FINAL PERFIL*/
                 /*MENU RESPONSIVE*/
                 
                 @media (max-width:768px) {
@@ -433,17 +486,71 @@
                         width: 100%;
                         position: absolute;
                         padding: 0;
-                        justify-content: center;
                         text-align: center;
                     }
                     .texto_inicio {
-                        font-size: 20px;
+                        font-size: 18px;
                     }
-                    .container_imagen {
-                        width: 100%;
-                        background: rgba(255, 254, 254, 0.233);
-                    }
+                    .svg_comousar,
                     .imagen_svg {
                         display: none;
+                    }
+                    .presentacion p {
+                        font-size: 16px;
+                    }
+                }
+                
+                @media (max-width:420px) {
+                    header label {
+                        display: block;
+                    }
+                    .logo {
+                        width: 120px;
+                    }
+                    .nav_bar {
+                        position: absolute;
+                        background-color: #FFBF69;
+                        width: 100%;
+                        margin-left: -100%;
+                        transition: all 0.5s;
+                        z-index: 999;
+                    }
+                    .nav_bar ul {
+                        flex-direction: column;
+                    }
+                    .nav_bar li {
+                        border-top: 1px solid white;
+                    }
+                    #btn-menu:checked~.nav_bar {
+                        margin: 0;
+                    }
+                    .container_principal {
+                        height: 100vh;
+                        padding: 0;
+                    }
+                    .container_inc {
+                        width: 100%;
+                        position: absolute;
+                        padding: 0;
+                        text-align: center;
+                    }
+                    .titulo {
+                        font-size: 45px;
+                    }
+                    .texto_inicio {
+                        font-size: 16px;
+                    }
+                    .svg_comousar,
+                    .imagen_svg {
+                        display: none;
+                    }
+                    .btn_iniciar {
+                        font-size: 14px;
+                    }
+                    .presentacion h2 {
+                        font-size: 45px;
+                    }
+                    .presentacion p {
+                        font-size: 12px;
                     }
                 }
