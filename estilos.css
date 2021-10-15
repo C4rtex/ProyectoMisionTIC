@@ -429,7 +429,7 @@
                 /*Perfil*/
                 
                 .nav_bar2 {
-                    padding: 15px;
+                    padding: 15px 15px 0px 15px;
                 }
                 
                 .nav_bar2 ul {
@@ -451,7 +451,198 @@
                     border-top-left-radius: 15px;
                     border-top-right-radius: 15px;
                 }
-                /*FINAL PERFIL*/
+                .actiarutinas{
+                    background-color: white;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    
+                }
+                .txtblanco{
+                    color: white;
+                }
+                .divnuevarutina{
+                    display: flex;
+                    height: 40vh;
+                    padding: 0px 15px 0px 0px;
+                }
+                .agrrutina{
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .txtrutina{
+                    width: 50%;
+                    height: 100%;
+                }
+                .btnagrrutina{
+                    width: 35%;
+                    display: flex;
+                    cursor: pointer;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    height: 90%;
+                    background-color: white;
+                    margin: auto;
+                    border: 10px solid gray;
+                    border-radius: 15px;
+                }
+                .imagen_perf {
+                    position: absolute;
+                    display: block;
+                    z-index: -9;
+                    width: 100%;
+                    padding: 0 15px 0px 15px;
+                    height: 42%;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                    object-fit: cover;
+                }
+                .liagregarrutina{
+                    cursor: pointer;
+                }
+                .liverrutinas{
+                    cursor: pointer;
+                }
+                .divrutinas{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-auto-rows: 200px;
+                    grid-gap: 100px;
+                    height: 47vh;
+                    background-color: white;
+                    padding-top: 40px;
+                    padding-left: 80px;
+                    padding-right: 40px;
+                }
+                .item_rutina{
+                    height: 250px;
+                    width: 200px;
+                    cursor: pointer;
+                    border: 10px solid rgba(156, 156, 156,0.5);
+                    border-radius: 15px;
+                    background-image: url(../imagenes/dumbbell-ga97b4aa6f_1280.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .texto_rutinas{
+                    color: white;
+                    font-weight: 700;
+                    font-size: 40px;
+
+                }
+                .no_mostrar{
+                    display: none;
+                }
+                .modalCrearRutina{
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    height: 100%;
+                    background-color: black;
+                    z-index: 99;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-auto-rows: 200px;
+                    grid-gap: 50px;
+                    padding: 100px 50px ;
+                }
+                .divModalCrear{
+                    height: fit-content;
+                    border-radius: 20px;
+                    padding: 70px 20px 20px 20px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .divModalCrear h2{
+                    padding-bottom: 20px;
+                }
+                .divModalCrear p{
+                    text-align: center;
+                display: block;
+                width: 60%;
+                }
+                .inputrutinas{
+                    width: 300px; border: 1px solid black;
+                    height: 40px;
+                    padding: 5px;
+                    display: block;
+                    border-radius: 5px;
+                    margin: 10px;
+                }
+                .fa-times-circle{
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    font-size: 50px;
+                    color: white;
+                    cursor: pointer;
+                }
+                .divdescrutina{
+                    border: 10px solid gray;
+                    border-radius: 20px;
+                    padding: 20px;
+                }
+                
+                /*FINAL PERFIL*/    
+                /*PAGINA RUITNA*/
+
+                .colorFondo{
+                    background-color: #4F5C69;
+                    padding:30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .tituloComencemos{
+                    color: white;
+                    font-size: 80px;
+                    margin-bottom: 50px;
+                }
+                .divtiempo{
+                    width: 80%;
+                    border-radius: 20px;
+                    padding: 30px;
+                    background-color: white;
+                }
+                .divtiempo h1{
+                    color: #47525E;
+                    font-size: 80px;
+                    text-align: center;
+                }
+                .divtiempo h3{
+                    color: #47525E;
+                    font-size: 30px;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+                .divmuestraejerc{
+                    margin-top: 45px;
+                    padding: 30px;
+                    width: 60%;
+                    display: flex;
+                    border-radius: 20px;
+                    background-color: white;
+                }
+                .divmuestraejerc h3{
+                    color: #47525E;
+                    font-size: 30px;
+                }
+                .divmuestraejerc div{
+                    padding-right:40px;
+                    padding-left:40px;
+                    padding-top: 40px;
+                }
+                /*FINAL PAGINA RUTINA*/
                 /*MENU RESPONSIVE*/
                 
                 @media (max-width:768px) {

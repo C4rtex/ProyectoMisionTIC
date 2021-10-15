@@ -11,3 +11,64 @@ inputs.forEach(input => {
         input.parentNode.classList.remove('focus');
     }
 });
+navCrearRutina= document.getElementById("navCrearRutina");
+navVerRutina=document.getElementById("navVerRutina");
+Xcerrar=document.getElementById("Xcerrar");
+btnagrrutina=document.getElementById("btnagrrutina");
+
+navVerRutina.onclick=verVerRut;
+navCrearRutina.onclick=verCrearRut;
+Xcerrar.onclick=cerrarModal;
+btnagrrutina.onclick=abrirModal;
+primeraCarga();
+
+function abrirModal(){
+    modalCrearRutina=document.getElementById("modalCrearRutina");
+    modalCrearRutina.classList.add("modalCrearRutina");
+    modalCrearRutina.classList.remove("no_mostrar");
+    seccionmostrar=document.getElementById("seccionmostrar");
+    seccionmostrar.classList.add("no_mostrar");
+    
+}
+function cerrarModal(){
+    modalCrearRutina=document.getElementById("modalCrearRutina");
+    modalCrearRutina.classList.remove("modalCrearRutina");
+    modalCrearRutina.classList.add("no_mostrar");
+    seccionmostrar=document.getElementById("seccionmostrar");
+    seccionmostrar.classList.remove("no_mostrar");
+}
+function verCrearRut(){
+    divrutinas=document.getElementsByClassName("divrutinas")[0];
+    misRutinas=document.getElementById("nuevaRutina");
+    divrutinas.classList.add("no_mostrar");
+    misRutinas.classList.add("txtblanco");
+    navCrearRutina.classList.add("activanuevarut");
+    divnuevarutina.classList.remove("no_mostrar");
+    navVerRutina.classList.remove("actiarutinas");
+}
+
+function verVerRut(){
+    divnuevarutina=document.getElementsByClassName("divnuevarutina")[0];
+    divnuevarutina.classList.add("no_mostrar");
+    navVerRutina.classList.add("actiarutinas");
+    divrutinas.classList.remove("no_mostrar");
+    misRutinas.classList.remove("txtblanco");
+    navCrearRutina.classList.remove("activanuevarut");
+}
+
+function primeraCarga(){
+    divrutinas=document.getElementsByClassName("divrutinas")[0];
+    misRutinas=document.getElementById("nuevaRutina");
+    divnuevarutina=document.getElementsByClassName("divnuevarutina")[0];
+  divrutinas.classList.add("no_mostrar");
+    misRutinas.classList.add("txtblanco");
+    navCrearRutina.classList.add("activanuevarut");
+    divnuevarutina.classList.remove("no_mostrar");
+    navVerRutina.classList.remove("actiarutinas");
+    modalCrearRutina=document.getElementById("modalCrearRutina");
+    modalCrearRutina.classList.remove("modalCrearRutina");
+    modalCrearRutina.classList.add("no_mostrar");
+    seccionmostrar=document.getElementsByClassName("seccionmostrar")[0];
+    seccionmostrar.classList.remove("no_mostrar");
+}
+//navVerRutina
