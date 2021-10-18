@@ -44,7 +44,6 @@
                 style="padding:50px; display: inline-block; font-size: 100px; text-align: end; width: 50%;"></i>
             <h2 style="width: 50%; display: flex;align-items: center;">Nombre</h2>
         </div>
-
         <div style="border:15px; border-radius: 20px; height: 60vh; background-color:rgba(150, 159, 170, 0.5);">
             <nav class="nav_bar2">
                 <ul>
@@ -86,13 +85,16 @@
         <div class="divModalCrear">
             <h2>Nueva Rutina</h2>
             <p class="texto_inicio">Agrega una rutina paso a paso, puedes personalizarla con una portada c:</p>
-            <input class="inputrutinas texto_inicio" type="text" placeholder="Ejercicio">
-            <input class="inputrutinas texto_inicio" type="text" placeholder="Duracion">
-            <button type="button" class="btn btn-secondary m-5" style="width: 200px;">Agregar</button>
+            <form action="" id="formEjercicios">
+            <input class="inputrutinas texto_inicio" type="text" placeholder="Ejercicio" name="inpEjercicios" required>
+            <input id="tiempo" class="inputrutinas texto_inicio" type="number" placeholder="Duracion" name="inpTiempo" required>
+            <button class="btn btn-secondary m-5" style="width: 200px;">Agregar</button>
+        </form>
         </div>
         <div class="divModalCrear">
             <h2>Rutina</h2>
-            <table class="table" style="background-color: white;">
+            <form action="">
+            <table class="table" style="background-color: white;" id="tablaEjercicios">
                 <thead>
                     <tr>
                         <th scope="col">Ejercicio</th>
@@ -101,35 +103,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">Bicep</th>
-                        <td>1:30</td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">Tricep</th>
-                        <td>1:00</td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">Deltoide</th>
-                        <td>2:00</td>
-
-                    </tr>
+                    
                 </tbody>
                 <tfoot>
                     <tr>
                         <th scope="row">Series</th>
-                        <td><input type="number" style="width: 50px; border: 1px solid black;"></td>
+                        <td><input type="number" style="width: 50px; border: 1px solid black;" required></td>
                     </tr>
                     <tr>
-                        <th scope="row">Total</th>
-                        <td>17:30</td>
+                        <td scope="row" ><strong>Total</td>
+                        <td id="totaltiempo">0</td>
                     </tr>
                 </tfoot>
             </table>
-            <button type="button" class="btn btn-secondary m-5" style="width: 200px;">¡Listo!</button>
-
+            <button type="submit" class="btn btn-secondary m-5" style="width: 200px;">¡Listo!</button>
+            </form>
         </div>
     </div>
     <div class="modal fade" id="modalmostrarrutina" tabindex="-1">

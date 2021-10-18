@@ -15,7 +15,21 @@ navCrearRutina= document.getElementById("navCrearRutina");
 navVerRutina=document.getElementById("navVerRutina");
 Xcerrar=document.getElementById("Xcerrar");
 btnagrrutina=document.getElementById("btnagrrutina");
+let formEjercicios=document.getElementById("formEjercicios");
 
+
+formEjercicios.addEventListener("submit",function(event){
+    event.preventDefault();
+    let formEjerciciosDatos=new FormData(formEjercicios)
+    let tablaEjerciciosRef=document.getElementById("tablaEjercicios");
+    let nuevaFilaEjercRef =tablaEjerciciosRef.insertRow(1);
+    let nuevaCeldaEjercRef = nuevaFilaEjercRef.insertCell(0);
+    nuevaCeldaEjercRef.textContent =formEjerciciosDatos.get("inpEjercicios");
+    let nuevaCeldaTempRef = nuevaFilaEjercRef.insertCell(1);
+    nuevaCeldaTempRef.textContent =formEjerciciosDatos.get("inpTiempo");
+    let tiempito=document.getElementById("totaltiempo");
+    tiempito.textContent=parseInt(document.getElementById("totaltiempo").innerHTML)+ parseInt(document.getElementById("tiempo").value);
+})
 navVerRutina.onclick=verVerRut;
 navCrearRutina.onclick=verCrearRut;
 Xcerrar.onclick=cerrarModal;
@@ -71,4 +85,8 @@ function primeraCarga(){
     seccionmostrar=document.getElementsByClassName("seccionmostrar")[0];
     seccionmostrar.classList.remove("no_mostrar");
 }
+function alerta(){
+    alert("siobvio")
+}
+
 //navVerRutina
